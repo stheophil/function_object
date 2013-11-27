@@ -22,6 +22,9 @@ An (experimental) implementation of Scala-like function objects in C++11 that su
 
 See the `function_object` header and check out the examples in `main.cpp`. It isn't much code. If you create function objects out of lambdas or callable objects you have to specify the arity. There is currently no way to derive the function signatur from a callable object in C++. All I can do is check if an object can be called with a given signature, but that is not the same thing. 
 
+It compiles successfully with GCC 4.8.2
+It does not compile with Visual Studio 2013 at the moment.
+
 # To Do
 
 Function objects cannot be chained. That is obviously useful. It would allow you to create a function object like this:
